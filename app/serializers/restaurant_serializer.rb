@@ -1,7 +1,5 @@
 class RestaurantSerializer < ActiveModel::Serializer
-  attributes :id, :name, :address, :pizzas
+  attributes :id, :name, :address
+  has_many :pizzas
 
-  def pizzas
-    object.pizzas.map { |pizza| PizzaSerializer.new(pizza).as_json }
-  end
 end
