@@ -7,9 +7,9 @@ Rails.application.routes.draw do
   resources :pizzas, only: [:index]
   resources :restaurant_pizzas, only: [:create]
 
-  get '/restaurants', to: 'restaurants#index', defaults: { format: 'json' }
-  get '/restaurants/:id', to: 'restaurants#show', defaults: { format: 'json' }
-  delete '/restaurants/:id', to: 'restaurants#destroy', defaults: { format: 'json' }
-  get '/pizzas', to: 'pizzas#index', defaults: { format: 'json' }
-  post '/restaurant_pizzas', to: 'restaurant_pizzas#create', defaults: { format: 'json' }
+  # get '/restaurants', to: 'restaurants#index', defaults: { format: 'json' }
+  # get '/restaurants/:id', to: 'restaurants#show', defaults: { format: 'json' }
+  # delete '/restaurants/:id', to: 'restaurants#destroy', defaults: { format: 'json' }
+  # get '/pizzas', to: 'pizzas#index', defaults: { format: 'json' }
+  # post '/restaurant_pizzas', to: 'restaurant_pizzas#create', defaults: { format: 'json' }
 end
