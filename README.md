@@ -30,6 +30,8 @@ To install all the gems, run
 
 To run the rails server run, `rails s or rails server`
 
+Once you run the rails server, enter this in your respective browser to see the json `http://localhost:3000`
+
 This is what the associations table look like for the code
 
 ![Screenshot from 2023-03-19 23-14-28](https://user-images.githubusercontent.com/105820877/226195100-4abdc63b-70bb-40b1-98f1-d5f370883ff7.png) 
