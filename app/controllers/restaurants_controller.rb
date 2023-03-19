@@ -16,7 +16,7 @@ class RestaurantsController < ApplicationController
   end
 
   def destroy
-    restaurant = Restaurant.find_by(id: params[:id])
+    restaurant = Restaurant.includes(:restaurant_pizzas).find_by(id: params[:id])
 
     if restaurant
       restaurant.restaurant_pizzas.destroy_all

@@ -4,4 +4,6 @@ class PizzasController < ApplicationController
     @pizzas = Pizza.all
     render json: @pizzas
   end
+
+ 
 end
