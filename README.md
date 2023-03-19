@@ -1,4 +1,4 @@
-# Pizza
+# Pizzas
 
 # How to get started
 
