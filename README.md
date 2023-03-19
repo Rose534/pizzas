@@ -34,7 +34,7 @@ This is what the associations table look like for the code
 
 ![Screenshot from 2023-03-19 23-14-28](https://user-images.githubusercontent.com/105820877/226195100-4abdc63b-70bb-40b1-98f1-d5f370883ff7.png) 
 
-This is what the various endpoints will output when run
+This is what the various endpoints will output when you run it
 
 `Get/restaurants`
 
