@@ -1,25 +1,31 @@
-# README
+# Pizza
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# How to get started
 
-Things you may want to cover:
+In order for you to use the content on this repo ensure you have the following:
 
-* Ruby version
+A computer that runs on either of the following; (Windows 7+, Linux, Mac OS) ruby  
 
-* System dependencies
+# Installation
 
-* Configuration
+To use this repo on your machine, you require some simple steps:
 
-* Database creation
+# Step one
 
-* Database initialization
+Open a terminal / command line interface on your computer
 
-* How to run the test suite
+Clone the repo by using the following:
 
-* Services (job queues, cache servers, search engines, etc.)
+    git@github.com:Rose534/pizzas.git
 
-* Deployment instructions
+Change directory to the repo folder:
 
+    cd pizza_shop
 
+Use code . to open it in visual studio
 
+To install all the gems, run
+
+     bundle install
+
+![Screenshot from 2023-03-19 23-14-28](https://user-images.githubusercontent.com/105820877/226195100-4abdc63b-70bb-40b1-98f1-d5f370883ff7.png)
