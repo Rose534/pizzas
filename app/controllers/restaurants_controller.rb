@@ -2,15 +2,17 @@ class RestaurantsController < ApplicationController
     
     def index
         @restaurants = Restaurant.all
-        render json: @restaurants, each_serializer: RestaurantSerializer
+        render json: @restaurants.to_json(only: [:id, :name, :address])
       end
     
       def show
         @restaurant = Restaurant.find_by(id: params[:id])
         if @restaurant
-          render json: @restaurant, serializer: RestaurantSerializer
+          render json: @restaurant.as_json(include: {
+            pizzas: { only: [:id, :name, :ingredients] }
+          })
         else
-          render json: { error: "Restaurant not found" }, status: :not_found
+          render json: { error: 'Restaurant not found' }, status: :not_found
         end
       end
     
@@ -18,10 +20,11 @@ class RestaurantsController < ApplicationController
         @restaurant = Restaurant.find_by(id: params[:id])
         if @restaurant
           @restaurant.destroy
-          render json: {}, status: :no_content
+          head :no_content
         else
-          render json: { error: "Restaurant not found" }, status: :not_found
+          render json: { error: 'Restaurant not found' }, status: :not_found
         end
       end
+    
    
 end
