@@ -30,7 +30,7 @@ To install all the gems, run
 
 To run the rails server run, `rails s or rails server`
 
-This backend is already deployed, use this link to access it via the server `https://pizza-shop-tiwq.onrender.com/restaurants`
+This backend is already deployed, use this link to access it via the server https://pizza-shop-tiwq.onrender.com/restaurants
 
 Once you run the rails server, enter this in your respective browser to see the json `http://localhost:3000`
 
